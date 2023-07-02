@@ -1,8 +1,8 @@
 // write a program to check whether the given input string is an anagram or not
 
 var anagramCheck=(a,b)=>{
-     a=a.split('').sort().join('')
-     b=b.split('').sort().join('')
+    //  a=a.split('').sort().join('')
+    //  b=b.split('').sort().join('')
  let hasMap1=new Map();
  for(let item of a){
     if(hasMap1.has(item)){
@@ -39,5 +39,5 @@ return "The given strings are An Anagram"
 //  if(str1===str2) return "Anagram"
 //  return "Not an anagram"
 }
-console.log(anagramCheck("cccbbaaa","aaabbccc"))
+console.log(anagramCheck("abc","cba"))
 console.log(anagramCheck("bb","aa"))
