@@ -40,4 +40,4 @@ return "The given strings are An Anagram"
 //  return "Not an anagram"
 }
 console.log(anagramCheck("abc","cba"))
-console.log(anagramCheck("bb","aa"))
+console.log(anagramCheck('anagram', 'nagaram'))
