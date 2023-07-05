@@ -36,5 +36,5 @@ function sameFrequency(a,b){
     }
     return true
 }
-console.log(sameFrequency(123,321))
+console.log(sameFrequency(3589578, 5879385))
 
