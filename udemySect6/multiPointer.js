@@ -13,5 +13,16 @@ function areThereDuplicates(){
  }
   return false
 }
+console.log(areThereDuplicates(1,2,3,5,4))
+// TC=O(n)
+// --------------------------------------------using SET method-----------------
+function areThereDuplicates(){
+    return new Set(arguments).size!== arguments.length
+}
+//TC = O(n)
+
 console.log(areThereDuplicates(1,2,3,5,2))
+
+
+
 
