@@ -7,11 +7,11 @@
 function sameFrequency(a,b){
     a=a.toString()
     b=b.toString()
-    hasMap1= new Map()
-    hasMap2= new Map()
+    let hasMap1= new Map()
+   let  hasMap2= new Map()
     for(let item of a){
         if(hasMap1.has(item)){
-            hasMap1.set(item,hasMap1.get(item,hasMap1.get(item,1)))
+            hasMap1.set(item,hasMap1.get(item)+1)
         }else{
             hasMap1.set(item,1)
         }
@@ -19,7 +19,7 @@ function sameFrequency(a,b){
 
     for(let item of b){
         if(hasMap2.has(item)){
-            hasMap2.set(item,hasMap2.get(item,hasMap2.get(item,1)))
+            hasMap2.set(item,hasMap2.get(item)+1)
         }else{
             hasMap2.set(item,1)
         }
@@ -36,5 +36,5 @@ function sameFrequency(a,b){
     }
     return true
 }
-console.log(sameFrequency(3589578, 5879385))
+console.log(sameFrequency(3589578, 5879380))
 
