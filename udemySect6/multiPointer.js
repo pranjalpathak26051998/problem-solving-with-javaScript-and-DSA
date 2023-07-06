@@ -13,7 +13,7 @@ function areThereDuplicates(){
  }
   return false
 }
-console.log(areThereDuplicates(1,2,3,5,4))
+console.log(areThereDuplicates(1, 2, 2))
 // TC=O(n)
 // --------------------------------------------using SET method-----------------
 function areThereDuplicates(){
