@@ -1,6 +1,8 @@
+// Write a function called recursiveRange which accepts a number and adds up all the numbers from 0 to the number passed to the function 
 
-function sumRange(num){
+function recursiveRange(num){
+    if(num===0) return 0;
     if(num===1) return 1;
-    return num+sumRange(num-1);
+    return num+recursiveRange(num-1);
 }
-console.log(sumRange(4))
+console.log(recursiveRange(6));
