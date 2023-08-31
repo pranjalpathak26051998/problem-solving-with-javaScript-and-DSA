@@ -1,13 +1,15 @@
 //WAP for fibonacci series using recursion and iteration both
 //base case f(0)=0 and f(1)=1;
 
-// const fibonacci=(n)=>{
-//     if(n < 2){
-//         return 1;
-//     }
-//      return fibonacci(n-2)+fibonacci(n-1);
-// }
-// console.log(fibonacci(10))
+const fibonacc=(n)=>{
+  let arr=[];
+    if(n < 2){
+        return 1;
+    }
+     arr.push(fibonacc(n-2)+fibonacc(n-1));
+     return arr
+}
+console.log(fibonacc(10))
 
 function fibonacci(n) {
     if (n < 2){
