@@ -15,12 +15,12 @@ console.log(arr.includes(9))
 // linearSearch([100], 200) // -1
 const linearSearch=(arr,val)=>{
     for(let i=0;i<arr.length;i++){
-        if(arr[i]==val) return "Present"
+        if(arr[i]==val) return `the index of the val is ${i}`
     }
     return "Not Present"
 }
 arr=[1,2,3,4,5,6,7,8,9,0]
-console.log(linearSearch(arr,42))
+console.log(linearSearch(arr,4))
 
 
 
